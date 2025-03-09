@@ -1,7 +1,3 @@
-pragma solidity ^0.8.0;
-
-contract SimpleToken {
-
 mapping(address => uint256) public balances;
 
 uint256 public totalSupply;
@@ -22,4 +18,3 @@ function transfer(address recipient, uint256 amount) public returns (bool) {
 
 
 event Transfer(address indexed from, address indexed to, uint256 value);
-}
