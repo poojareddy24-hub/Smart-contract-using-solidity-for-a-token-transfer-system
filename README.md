@@ -1,6 +1,6 @@
-# Smart-contract-using-solidity-for-a-token-transfer-system
-I've added a detailed description and documentation for your smart contract, explaining its functionality and purpose. Let me know if you need further refinements!
+pragma solidity ^0.8.0;
 
+contract SimpleToken {
 
 mapping(address => uint256) public balances;
 
@@ -22,3 +22,4 @@ function transfer(address recipient, uint256 amount) public returns (bool) {
 
 
 event Transfer(address indexed from, address indexed to, uint256 value);
+}
